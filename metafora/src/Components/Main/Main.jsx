@@ -18,7 +18,7 @@ import 'aos/dist/aos.css'
 
 //array data
 
-const Data=[
+const Data= [
 {
   id:1,
   imgSrc : img,
@@ -113,7 +113,7 @@ const Main = () => {
         Most visited destinations
       </h3>
     </div>
-    <div className="setContent grid">
+    <div className="secContent grid">
         {
           Data.map(({id,imgSrc,destTitle,location,grade,fees,description})=>{
             return(
@@ -121,7 +121,7 @@ const Main = () => {
               data-aos="fade-up"
               className="singleDestination">
                 <div className="imageDiv">
-                  <img src={imgSrc} alt="destTitle" />
+                  <img src={imgSrc} alt={destTitle} />
                 </div>
                 <div className="cardInfo">
                   <h4 className="destTitle">{destTitle}</h4>

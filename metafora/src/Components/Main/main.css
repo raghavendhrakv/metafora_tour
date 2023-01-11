@@ -62,8 +62,8 @@
 .main .secContent .singleDestination .imageDiv img {
   height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: none;
+     object-fit: none;
   transition: 2s ease;
 }
 .main .secContent .singleDestination .imageDiv:hover img {

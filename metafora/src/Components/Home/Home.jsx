@@ -13,13 +13,15 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 const Home  = () => {
-
   useEffect(()=>{
-    Aos.init({duration: 2000})
+    Aos.init({duration: 1000})
   },[])
+  
   return (
     <section className='home'>
       <div className='overlay'>
+      </div>
+
         <video src={video} muted autoPlay loop type='video/mp4'></video>
         <div className='homeContent container'>
           <div className='textDiv'>
@@ -31,13 +33,13 @@ const Home  = () => {
           </h1>
           </div>
 
-           <div data-aos="fade-up" className='cardDiv grid'>
+           <div  className='cardDiv grid'>
             <div className='destinationInput'>
               <label htmlFor='city'>
                 Search your destination:
               </label>
               <div className='input flex'>
-                <input type="text" placeholder='Enter yout name here....'/>
+                <input type="text" placeholder='Enter your name here..'/>
                 <TbLocation className="icon"/>
               </div>
             </div>
@@ -47,9 +49,8 @@ const Home  = () => {
                 Select your date:
               </label>
               <div className='input flex'>
-                <input type="date" placeholder='Enter yout name here....'/>
-                <TbLocation className="icon"/>
-              </div>
+                <input type="date"/>
+                </div>
             </div>
             <div className='priceInput'>
               <div className='label_total flex'>
@@ -80,7 +81,6 @@ const Home  = () => {
               </div>
             </div>
         </div>
-      </div>
     </section>
   )
 }

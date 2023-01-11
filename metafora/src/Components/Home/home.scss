@@ -35,7 +35,6 @@
         position: absolute;
         height:100%;
         width: 100%;
-        background: rgb(47,106,127);
         top:0;
         bottom: 0;
         object-fit: cover;
@@ -44,7 +43,7 @@
     .homeContent{
         width: 100%;
         height:max-content;
-        padding: 0rem 1.5rem 3rem;
+        padding: 8rem 1.5rem 3rem;
         display: flex;
         row-gap: 3rem;
         flex-direction: column;
@@ -55,7 +54,7 @@
         z-index: 100;
 
         .textDiv{
-            padding: 2rem 0;
+            padding: 1rem 0;
 
             .smallText{
                 font-size: 13px;
@@ -65,12 +64,13 @@
             .homeTitle{
                 position: relative;
                 font-size: 1.8rem;
+                padding-top: 3px;
                 
             }
         }
         .cardDiv{
             position: relative;
-            padding: 2rem 1rem;
+            padding: 1rem 1rem;
             background: var(--whiteColor);
             border-radius: 10px;
             gap: 1rem;
@@ -129,7 +129,7 @@
                 bottom: -0.7rem;
                 column-gap: .8rem;
                 padding: 5px 1rem;
-                border-radius: 3re,;
+                border-radius: 3rem;
                 left: 50%;
                 transform: translate(-50%);
                 justify-content: center;

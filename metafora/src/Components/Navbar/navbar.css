@@ -61,6 +61,8 @@
   }
   .header .navBar .navItem {
     padding: 0.5rem 0;
+    
+    
   }
   .header .navBar .navItem .navLink {
     color: var(--textColor);

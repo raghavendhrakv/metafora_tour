@@ -122,6 +122,7 @@
                     row-gap: 5rem;
                 }
                 .logoDiv{
+                    padding-left:45%;
                     .logo{
                         color:var(--blackColor);
                         font-weight: 600;
@@ -138,6 +139,7 @@
                 }
 
                 .footerSocials{
+                    
                     column-gap: .5rem;
                     .icon{
                         color:var(--blackColor);
@@ -149,11 +151,12 @@
                     }
                 }
                 .footerLinks{
+                    display: inline-flex;
                     flex-basis: 50%;
                     width: 100%;
                     gap:1rem;
                     grid-template-columns: repeat(2,1 fr);
-                    justify-content: space-between;
+                    justify-content: space-evenly;
                     .linkGroup{
                         .groupTitle{
                             display:block;

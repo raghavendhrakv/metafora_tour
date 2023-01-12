@@ -11,7 +11,7 @@
     --bodyColor: rgb(240,240,246);
     --cardBG: rgb(225,225,235);
     }
-    .footer{
+.footer{
         width:100%;
         position:relative;
         padding:2rem 0;
@@ -122,7 +122,6 @@
                     row-gap: 5rem;
                 }
                 .logoDiv{
-                    padding-left:45%;
                     .logo{
                         color:var(--blackColor);
                         font-weight: 600;
@@ -139,7 +138,6 @@
                 }
 
                 .footerSocials{
-                    
                     column-gap: .5rem;
                     .icon{
                         color:var(--blackColor);
@@ -151,12 +149,11 @@
                     }
                 }
                 .footerLinks{
-                    display: inline-flex;
                     flex-basis: 50%;
                     width: 100%;
                     gap:1rem;
                     grid-template-columns: repeat(2,1 fr);
-                    justify-content: space-evenly;
+                    justify-content: space-between;
                     .linkGroup{
                         .groupTitle{
                             display:block;
@@ -202,4 +199,104 @@
                 }
             }
         }
+}
+
+@media screen and (min-width: 500px){
+    .footer{
+        .secContent{
+            .footerCard{
+                .footerLinks{
+                    grid-template-columns: repeat(3,1fr);
+                    padding-bottom: 1rem;
+                }
+
+                .footerDiv{
+                    justify-content: space-between;
+                    flex-direction: row;
+
+                    small{
+                        font-size: 14px;
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
     }
+}
+
+@media screen and (min-width: 660px){
+    .footer{
+        .secContent{
+            .contactDiv{
+                flex-direction: row ;
+                justify-content: space-between;
+
+                .inputDiv{
+                    width: max-content;
+                    justify-content: row;
+                    flex-direction: flex-start;
+
+                    input{
+                        width: 60%;
+                    }
+                    .btn{
+                        width: max-content;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 840px){
+    .footer{
+        padding: 5rem 0;
+        .secContent{
+            .footerCard{
+                flex-direction: row;
+
+                .footerLinks{
+                    grid-template-columns: repeat(3,1fr);
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1024px){
+    .footer{
+        .secContent{
+            .footerCard{
+                padding: 3rem 1rem;
+
+                .footerIntro{
+                    .footerParagraph{
+                        font-size: 15px;
+                        color: var(--textColor);
+                    }
+
+                    .footerSocials{
+                        column-gap: .5rem;
+                        .icon{
+                            color: var(--textColor);
+                            font-size: 25;
+
+                            &:hover{
+                                color: var(--PrimaryColor);
+                            }
+                        }
+                    }
+                }
+
+                .footerLinks{
+                    .linkGroup{
+                        .footerList{
+                            font-size: 16px;
+                            padding: 5px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

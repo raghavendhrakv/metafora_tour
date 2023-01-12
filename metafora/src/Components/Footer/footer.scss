@@ -66,12 +66,13 @@
 
                     h2{
                         color:var(--whitecolor);
-                        font-size:1.8rem;
+                        font-size: 1.8rem;
                     }
                 }
+
                 .inputDiv{
-                    width:100%;
-                    gap:1rem;
+                    width: 100%;
+                    gap: 1rem;
                     flex-direction: column;
 
                     input{
@@ -79,7 +80,7 @@
                        padding: .5rem .6rem;
                        border-radius: 3rem;
                        border:1px solid var(--whitecolor); 
-                       outline:none;
+                       outline: none;
                        background: transparent;
                        color: var(--whitecolor);
 
@@ -96,7 +97,7 @@
                         gap: .5rem;
 
                         .icon{
-                            font: size 0.18px; 
+                            font-size: 18px; 
                         }
                     }
                 }
@@ -105,9 +106,9 @@
             .footerCard{
                 position:relative;
                 padding: 1rem 1rem 4rem;
-                gap:2rem;
+                gap: 2rem;
                 border-radius: 1rem;
-                background: var(--whitecolor);
+                background: var(--bodyColor);
                 width:100%;
                 justify-content: center;
                 flex-direction: column;
@@ -119,13 +120,13 @@
                     justify-content: center;
                     align-items: flex-start;
                     flex-direction:column;
-                    row-gap: 5rem;
                 }
                 .logoDiv{
                     padding-left:45%;
                     .logo{
                         color:var(--blackColor);
                         font-weight: 600;
+
                         .icon{
                             font-size: 25px;
                             color:var(--PrimaryColor);
@@ -139,14 +140,13 @@
                 }
 
                 .footerSocials{
-                    
-                    column-gap: .5rem;
+                   
                     .icon{
-                        color:var(--blackColor);
+                        color:white;
                         font-size:20px;
 
                         &:hover{
-                            color:var(--PrimaryColor);
+                            color:var(--whitecolor);
                         }
                     }
                 }

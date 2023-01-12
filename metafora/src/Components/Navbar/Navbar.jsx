@@ -8,27 +8,27 @@ const Navbar = () => {
       const[active, setActive]= useState('navBar')
       //Function to toggle navBar
       const showNav = ()=>{
-        setActive('navBar activeNavbar')
+        setActive('navBar  activeNavbar')
       }
 
 
-     const removeNavbar = ()=>{
-      setActive('navBar')
-     }
+      const removeNavbar = ()=>{
+        setActive('navBar')
+       }
 
   return (
     <section className='navBarSection'>
       <header className="header flex">
         <div className='logoDiv'>
           <a href="#" className="logo flex">
-            <h1><SiYourtraveldottv className="icon"/>Metafora.
+            <h1><SiYourtraveldottv className="icon"/>Metafora
             </h1>
           </a>
         </div>
         <div className={active}>
-          <ul className="navLists flex">
+        <ul className="navLists flex">
             <li className="navItem">
-              <a href='#' className="navLink">Home  </a>
+              <a href='#' className="navLink">Home   </a>
               </li>
               <li className="navItem">
               <a href='#' className="navLink">Packages  </a>
